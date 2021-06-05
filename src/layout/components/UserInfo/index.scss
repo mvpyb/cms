@@ -1,0 +1,144 @@
+$color : #fff;
+.user-info-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0);
+  z-index: 999;
+  /*&.per-container{
+    z-index: 1000;
+  }*/
+}
+.user-info-box{
+  position: absolute;
+  width: 422px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 20px 32px 20px;
+}
+.header{
+  //height: 73px;
+  //line-height: 73px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  //border-bottom: 1px solid rgba(255,255,255,0.2);
+  .title{
+    font-size: 28px;
+    line-height: 42px;
+    height: 42px;
+  }
+  .handle-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    color: #fff;;
+  }
+}
+.body{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  .body-item{
+    height: 22px;
+    line-height: 22px;
+    //margin-bottom: 34px;
+    .label {
+      color:$color;
+      font-size: 14px;
+    }
+    .value {
+      color: $color;
+    }
+    &.avatar-item{
+      height: 97px;
+      line-height: 30px;
+      .value {
+        width: 97px;
+        height: 97px;
+      }
+    }
+    &.account-item{
+      margin-top: 16px;
+      margin-bottom: 26px;
+    }
+    &.active-item{
+      height: 36px;
+      line-height: 36px;
+      .remote-default{
+        width: 90px;
+      }
+    }
+    &.nickname-item{
+      height: 36px;
+      line-height: 36px;
+      margin-top: 26px;
+      margin-bottom: 55px;
+      .value {
+        width: 300px;
+      }
+    }
+    &.body-item--head{
+      //padding: 0 42px 40px;
+      height: auto;
+      .tab-item{
+        font-size: 14px;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 16px;
+        text-align: center;
+        .handle-icon{
+          color: #8A8A8A;
+          width: 30px;
+          height: 30px;
+        }
+        &.left{
+          text-align: left;
+        }
+        &.actived{
+          color: #A761E6;
+          .handle-icon{
+            color: #A761E6;
+          }
+        }
+      }
+    }
+  }
+}
+.footer {
+  text-align: center;
+  .el-button{
+    display: inline-block;
+    width: 300px;
+  }
+}
+
+// 权限
+.per-container{
+  .user-info-box{
+    width: 472px;
+    padding: 20px 20px 45px 20px;
+  }
+  .header{
+    .title{}
+    .handle-icon {
+      right: 0;
+    }
+  }
+  .body{
+    margin-top: 23px;
+    margin-bottom: 45px;
+    .body-item{
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}
